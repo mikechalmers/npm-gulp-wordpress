@@ -44,7 +44,17 @@ export function styles() {
 export function templates() {
 	return (
 		gulp
-			.src(["src/html/**/**/*.hbs", "!src/html/partials/**/*.hbs"], { allowEmpty: true })
+			.src(
+				[
+					"src/templates/**/**/*.html",
+					"src/templates/**/**/*.php",
+					"src/templates/**/**/*.php",
+					"!src/templates/partials/**/*.html",
+				],
+				{
+					allowEmpty: true,
+				}
+			)
 			// .pipe(hb().partials("src/html/partials/**/*.hbs"))
 			.pipe(ext(".php"))
 			.pipe(gulp.dest(themeFolder))
@@ -55,7 +65,7 @@ export function templates() {
 function watch() {
 	gulp.watch("src/js/**/*.js", scripts);
 	gulp.watch("src/scss/**/*", styles);
-	gulp.watch("src/html/**/**/*.hbs", templates);
+	gulp.watch("src/templates/**/**/*.html", templates);
 	// gulp.watch("src/img/**/*", images);
 	// gulp.watch("src/fonts/**/*", fonts);
 }
