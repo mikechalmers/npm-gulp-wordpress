@@ -48,8 +48,9 @@ export function templates() {
 				[
 					"src/templates/**/**/*.html",
 					"src/templates/**/**/*.php",
-					"src/templates/**/**/*.php",
-					"!src/templates/partials/**/*.html",
+					"src/templates/partials/**/**/*.php",
+					"src/templates/partials/**/**/*.html",
+					"src/templates/includes/**/**/*.php",
 				],
 				{
 					allowEmpty: true,
@@ -65,7 +66,7 @@ export function templates() {
 function watch() {
 	gulp.watch("src/js/**/*.js", scripts);
 	gulp.watch("src/scss/**/*", styles);
-	gulp.watch("src/templates/**/**/*.html", templates);
+	gulp.watch(["src/templates/**/**/*.php", "src/templates/**/**/*.html"], templates);
 	// gulp.watch("src/img/**/*", images);
 	// gulp.watch("src/fonts/**/*", fonts);
 }
