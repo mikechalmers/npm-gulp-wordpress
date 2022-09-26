@@ -23,6 +23,9 @@ if ( function_exists( 'add_theme_support' ) ) {
     // Add Support for post formats
     // add_theme_support( 'post-formats', ['post'] );
     // add_post_type_support( 'page', 'excerpt' );
+
+    // Localisation Support
+    load_theme_textdomain( 'barebones', get_template_directory() . '/languages' );
 }
 
 
@@ -30,7 +33,7 @@ if ( function_exists( 'add_theme_support' ) ) {
  * Hide admin bar
  */
 
-//  add_filter( 'show_admin_bar', '__return_false' );
+add_filter( 'show_admin_bar', '__return_false' );
 
 
 /**
