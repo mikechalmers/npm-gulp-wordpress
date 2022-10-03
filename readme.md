@@ -4,6 +4,8 @@
 
 uses a modified [barebones](https://github.com/benchmarkstudios/barebones) template
 
+automatically adds bootstrap CSS and JavaScript to style.css and main.js respectively
+
 type "gulp" to process
 
 look at gulpfile.js to see what's going on

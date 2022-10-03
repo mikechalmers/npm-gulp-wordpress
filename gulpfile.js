@@ -7,7 +7,7 @@ import gulpSass from "gulp-sass";
 const sass = gulpSass(dartSass);
 import cleanCSS from "gulp-clean-css";
 import ext from "gulp-ext-replace";
-import imagemin, { gifsicle, mozjpeg, optipng, svgo } from "gulp-imagemin";
+// import imagemin, { gifsicle, mozjpeg, optipng, svgo } from "gulp-imagemin";
 
 // theme folder
 const themeFolder = "./wp-content/themes/new-theme/";
