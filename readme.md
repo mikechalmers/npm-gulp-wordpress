@@ -4,15 +4,15 @@
 
 uses a modified [barebones](https://github.com/benchmarkstudios/barebones) template
 
-automatically adds the bootstrap 5 CSS and JavaScript to style.css and main.js respectively
+automatically adds the [bootstrap 5](https://getbootstrap.com/docs/5.2/getting-started/introduction/) CSS and JavaScript to style.css and main.js respectively
 
-type "gulp" to process and watch for changes
+type "[gulp](https://gulpjs.com/docs/en/getting-started/quick-start)" to process and watch for changes
 
 look at gulpfile.js to see what's getting built
 
 you can use [wp-env](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) from the processed theme folder (wp-content/themes/new-theme) to test it out
 
-it might be helpful to have a github action / bitbucket pipeline etc. to FTP the theme folder to the server
+it might be helpful to have a [github action](https://github.com/SamKirkland/FTP-Deploy-Action) / [bitbucket pipeline](https://bitbucket.org/atlassian/ftp-deploy/src/master/) etc. to FTP the theme folder to the server
 
 ## Wordpress theme
 
