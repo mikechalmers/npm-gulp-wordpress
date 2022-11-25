@@ -6,6 +6,9 @@
 package-lock.json
 
 # Node artifact files
+.vscode/
+
+# Node artifact files
 node_modules/
 
 # Compiled Java class files

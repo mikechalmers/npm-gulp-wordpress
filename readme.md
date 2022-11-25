@@ -14,6 +14,10 @@ you can use [wp-env](https://developer.wordpress.org/block-editor/reference-guid
 
 it might be helpful to have a [github action](https://github.com/SamKirkland/FTP-Deploy-Action) / [bitbucket pipeline](https://bitbucket.org/atlassian/ftp-deploy/src/master/) etc. to FTP the theme folder to the server
 
+    git clone https://github.com/mikechalmers/npm-gulp-wordpress.git
+    npm i
+    gulp
+
 ## Wordpress theme
 
 - change the theme folder in gulpfile.js
