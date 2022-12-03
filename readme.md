@@ -1,6 +1,7 @@
 # Wordpress with Gulp and NPM
 
-23/9/2022
+Latest Update: 03/12/2022
+Created: 23/9/2022
 
 uses a modified [barebones](https://github.com/benchmarkstudios/barebones) template
 
@@ -22,3 +23,8 @@ it might be helpful to have a [github action](https://github.com/SamKirkland/FTP
 
 - change the theme folder in gulpfile.js
 - change the theme settings in src/scss/style.scss
+
+## To-do
+
+- ~~add animate.css~~
+- fix npm warnings
