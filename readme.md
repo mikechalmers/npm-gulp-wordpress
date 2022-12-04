@@ -1,6 +1,6 @@
 # Wordpress with Gulp and NPM
 
-Latest Update: 03/12/2022
+Latest Update: 04/12/2022
 
 Created: 23/9/2022
 
@@ -14,7 +14,7 @@ look at gulpfile.js to see what's getting built
 
 you can use [wp-env](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) from the processed theme folder (wp-content/themes/new-theme) to test it out. this still works after gulp cleans out the theme folder.
 
-it might be helpful to have a [github action](https://github.com/SamKirkland/FTP-Deploy-Action) / [bitbucket pipeline](https://bitbucket.org/atlassian/ftp-deploy/src/master/) etc. to FTP the theme folder to the server
+it might be helpful to have a [github action](https://github.com/SamKirkland/FTP-Deploy-Action) / [bitbucket pipeline](https://bitbucket.org/atlassian/ftp-deploy/src/master/) etc. to FTP the theme folder to the server or a plugin like [wp pusher](https://wppusher.com/)
 
 ## Initial CLI setup
 
