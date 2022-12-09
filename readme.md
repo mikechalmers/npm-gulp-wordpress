@@ -1,6 +1,6 @@
 # Wordpress with Gulp and NPM
 
-Latest Update: 04/12/2022
+Latest Update: 09/12/2022
 
 Created: 23/9/2022
 

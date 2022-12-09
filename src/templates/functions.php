@@ -34,7 +34,7 @@ if ( function_exists( 'add_theme_support' ) ) {
  * Hide admin bar
  */
 
- add_filter( 'show_admin_bar', '__return_false' );
+  add_filter( 'show_admin_bar', '__return_false' );
 
 
 /**
@@ -61,7 +61,6 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 function barebones_post_comments_feed_link() {
     return;
 }
-
 add_filter('post_comments_feed_link', 'barebones_post_comments_feed_link');
 
 
@@ -92,15 +91,15 @@ function defer_scripts( $tag, $handle, $src ) {
 
 	// The handles of the enqueued scripts we want to defer
 	$defer_scripts = [
-        'SCRIPT_ID'
-    ];
+    'SCRIPT_ID'
+  ];
 
-    // Find scripts in array and defer
-    if ( in_array( $handle, $defer_scripts ) ) {
-        return '<script type="text/javascript" src="' . $src . '" defer="defer"></script>' . "\n";
-    }
-    
-    return $tag;
+  // Find scripts in array and defer
+  if ( in_array( $handle, $defer_scripts ) ) {
+    return '<script type="text/javascript" src="' . $src . '" defer="defer"></script>' . "\n";
+  }
+  
+  return $tag;
 } 
 
 add_filter( 'script_loader_tag', 'defer_scripts', 10, 3 );

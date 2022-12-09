@@ -36,3 +36,21 @@ remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
 remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');//since 3.8
 }
 add_action( 'admin_init', 'remove_dashboard_meta' );
+
+
+//
+/* disable WordPress Admin Bar for all users */
+//
+add_filter( 'show_admin_bar', '__return_false' );
+//
+/* disable menu items in admin */
+//
+add_action('admin_menu', function () {
+    remove_menu_page('edit-comments.php'); // remove comments
+    remove_menu_page('edit.php'); // remove posts
+});
+
+//
+/* disable  admin email verification at login */
+//
+add_filter( 'admin_email_check_interval', '__return_false' );
