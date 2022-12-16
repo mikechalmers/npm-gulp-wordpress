@@ -39,6 +39,13 @@ export function styles() {
 		.pipe(cleanCSS())
 		.pipe(gulp.dest(themeFolder));
 }
+export function admin() {
+	return gulp
+		.src("src/templates/includes/admin.scss")
+		.pipe(sass({ outputStyle: "compressed" }))
+		.pipe(cleanCSS())
+		.pipe(gulp.dest(themeFolder + "includes/"));
+}
 
 // process PHP templates
 export function templates() {
@@ -67,10 +74,11 @@ function watch() {
 	gulp.watch("src/js/**/*.js", scripts);
 	gulp.watch("src/scss/**/*", styles);
 	gulp.watch(["src/templates/**/**/*.php", "src/templates/**/**/*.html"], templates);
+	gulp.watch(["src/templates/**/**/*.scss"], admin);
 	// gulp.watch("src/img/**/*", images);
 	// gulp.watch("src/fonts/**/*", fonts);
 }
 
 // put it all together and what do we get
-const build = gulp.series(clean, scripts, styles, templates, watch);
+const build = gulp.series(clean, scripts, styles, admin, templates, watch);
 export default build;

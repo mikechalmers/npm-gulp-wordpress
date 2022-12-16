@@ -3,6 +3,14 @@
  * Website Wizard Theme Functions
  */
 
+/**
+ * Add custom admin styling
+ */
+function enqueuing_admin_scripts(){
+  wp_enqueue_style('admin-styles', get_template_directory_uri().'/includes/admin.css');
+}
+add_action( 'admin_enqueue_scripts', 'enqueuing_admin_scripts' );
+
 //
 /* website wizard admin dashboard widget */
 //
@@ -54,3 +62,13 @@ add_action('admin_menu', function () {
 /* disable  admin email verification at login */
 //
 add_filter( 'admin_email_check_interval', '__return_false' );
+
+//
+/* disable admin area for non-admins */
+//
+add_action('admin_init', 'disable_dashboard');
+function disable_dashboard() {
+  if (!current_user_can('manage_options') && $_SERVER['DOING_AJAX'] != '/wp-admin/admin-ajax.php') {
+  wp_redirect(home_url()); exit;
+  }
+}
