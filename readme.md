@@ -1,6 +1,6 @@
 # Wordpress with Gulp and NPM
 
-Latest Update: 09/12/2022
+Latest Update: 16/12/2022
 
 Created: 23/9/2022
 
@@ -34,6 +34,7 @@ and go to [localhost:8888/wp-admin](http://localhost:8888/wp-admin) and switch t
 
 1. change the theme folder in gulpfile.js
 2. change the theme settings in src/scss/style.scss
+3. modify backend styling in src/includes/admin.scss - example styling used to confirm working
 
 ## To-do
 
