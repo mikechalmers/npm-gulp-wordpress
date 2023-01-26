@@ -1,6 +1,6 @@
 # Wordpress with Gulp and NPM
 
-Latest Update: 16/12/2022
+Latest Update: 26/01/2023
 
 Created: 23/9/2022
 
@@ -28,7 +28,7 @@ then, with [docker](https://docs.docker.com/get-docker/) running, in the theme f
 
     wp-env start
 
-and go to [localhost:8888/wp-admin](http://localhost:8888/wp-admin) and switch to the new theme
+& go to [localhost:8888/wp-admin](http://localhost:8888/wp-admin) and switch to the new theme
 
 ## Setup instructions for wordpress theme
 
@@ -36,7 +36,13 @@ and go to [localhost:8888/wp-admin](http://localhost:8888/wp-admin) and switch t
 2. change the theme settings in src/scss/style.scss
 3. modify backend styling in src/includes/admin.scss - example styling used to confirm working
 
+## Setup instructions for FTP Deploy
+
+1.
+
 ## To-do
 
 - ~~add [animate.css](https://animate.style/)~~
 - fix npm warnings
+- homepage template that showcases all major elements for quick styling
+- complete setup instructions for FTP deploy
