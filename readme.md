@@ -46,3 +46,4 @@ then, with [docker](https://docs.docker.com/get-docker/) running, in the theme f
 - fix npm warnings
 - homepage template that showcases all major elements for quick styling
 - complete setup instructions for FTP deploy
+- add FTP action
