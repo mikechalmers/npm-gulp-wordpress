@@ -21,6 +21,7 @@ it might be helpful to have a [github action](https://github.com/SamKirkland/FTP
 change project-name to your chosen project / theme name
 
     git clone https://github.com/mikechalmers/npm-gulp-wordpress.git project-name
+    git remote set-url origin https://github.com/mikechalmers/(new-repository).git
     npm i
     gulp
 
@@ -33,8 +34,8 @@ then, with [docker](https://docs.docker.com/get-docker/) running, in the theme f
 ## Setup instructions for wordpress theme
 
 1. change the theme folder in gulpfile.js
-2. change the theme settings in src/scss/style.scss
-3. modify backend styling in src/includes/admin.scss - example styling used to confirm working
+2. change the theme settings in src/scss/style.scss - maybe turn it all off due to recent Bootstrap changes
+3. modify backend styling in src/templates/includes/admin.scss - example styling used to confirm working
 
 ## Setup instructions for FTP Deploy
 
