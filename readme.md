@@ -1,6 +1,6 @@
 # Wordpress with Gulp and NPM
 
-Latest Update: 18/06/2023
+Latest Update: 20/06/2023
 
 Created: 23/9/2022
 
@@ -44,6 +44,7 @@ then, with [docker](https://docs.docker.com/get-docker/) running, in the theme f
 ## To-do
 
 - ~~add [animate.css](https://animate.style/)~~
+- ~~add css normalize and update bootstrap~~
 - fix npm warnings
 - homepage template that showcases all major elements for quick styling
 - complete setup instructions for FTP deploy

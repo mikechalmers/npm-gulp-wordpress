@@ -6,6 +6,12 @@
  * Description: Theme description
  */
 
+// NORMALIZE.css
+@import "../../node_modules/normalize.css/normalize.css";
+
+// the whole BOOTSTRAP - try not to use this
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+
 // Variables override
 // @import 'variables/custom';
 

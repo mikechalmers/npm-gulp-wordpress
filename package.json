@@ -22,5 +22,8 @@
     "gulp-uglify": "^3.0.2",
     "module": "^1.2.5",
     "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
