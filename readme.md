@@ -1,6 +1,6 @@
 # Wordpress with Gulp and NPM
 
-Latest Update: 20/06/2023
+Latest Update: 2/10/2024
 
 Created: 23/9/2022
 
@@ -20,7 +20,8 @@ it might be helpful to have a [github action](https://github.com/SamKirkland/FTP
 
 change project-name to your chosen project / theme name
 
-    git clone https://github.com/mikechalmers/npm-gulp-wordpress.git project-name
+    git clone https://github.com/mikechalmers/npm-gulp-wordpress.git [project-name]
+    cd [project-name]
     git remote set-url origin https://github.com/mikechalmers/(new-repository).git
     npm i
     gulp
